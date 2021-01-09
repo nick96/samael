@@ -843,7 +843,7 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 [[package]]
 name = "xmlsec"
 version = "0.2.0"
-source = "git+https://github.com/nick96/rust-xmlsec?branch=remove-panics-and-unwraps#9bb4718a95b0d05b888c76c71e26000a687ff7c6"
+source = "git+https://github.com/nick96/rust-xmlsec?branch=master#7aab59d6a313cebae51e68b3b7f60c0e546bb18c"
 dependencies = [
  "bindgen",
  "lazy_static",
