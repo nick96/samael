@@ -16,10 +16,10 @@ use std::fmt::Debug;
 use std::io::Write;
 use url::Url;
 
-#[cfg(feature = "xmlsec")]
+#[cfg(feature = "usexmlsec")]
 use crate::crypto::reduce_xml_to_signed;
 
-#[cfg(not(feature = "xmlsec"))]
+#[cfg(not(feature = "usexmlsec"))]
 fn reduce_xml_to_signed<T>(xml_str: &str, _keys: &Vec<T>) -> Result<String, Error> {
     Ok(String::from(xml_str))
 }
